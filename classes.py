@@ -1,6 +1,7 @@
 import pygame
 from pygame.locals import*
 from constantes import*
+import random
 
 class Level:
 
@@ -91,3 +92,31 @@ class Char:
           self.case_y += 1
           self.y = self.case_y*sprite_size
       self.direction = self.image
+
+class Item:
+
+  def __init__(self,img_file, level):
+
+    self.img_file = pygame.image.load(img_file).convert_alpha()
+    self.x = 0
+    self.y = 0
+    self.level = level
+
+
+  def add(self):
+    
+    while self.level.building[self.y][self.x] == 'w' or self.level.building[self.y][self.x] == 'd' : 
+      self.y = random.randint(1,number_of_sprite - 1)
+      self.x = random.randint(1,number_of_sprite - 1)
+    self.x = self.x*40
+    self.y = self.y*40
+    return self.x, self.y
+
+
+  def remove(self):
+
+    self.x = -40
+    self.y = -40
+
+
+
