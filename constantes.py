@@ -2,6 +2,6 @@
 
 
 #Window parameters
-number_of_sprite = 15
-sprite_size = 40
-window_sprite = number_of_sprite * sprite_size
+NUMBER_OF_SPRITE = 15
+SPRITE_SIZE = 40
+WINDOW_SPRITE = NUMBER_OF_SPRITE * SPRITE_SIZE
