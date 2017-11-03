@@ -17,6 +17,8 @@ pygame.init()
 
 #define the game area
 window = pygame.display.set_mode((WINDOW_SPRITE,WINDOW_SPRITE))
+#window name
+pygame.display.set_caption(WINDOW_TITLE)
 
 #sound use in game
 home_sound = pygame.mixer.music.load("music/generique2.wav")
