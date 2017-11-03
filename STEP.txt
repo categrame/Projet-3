@@ -1,6 +1,6 @@
 \\\\\Versionning/////
 
-1 : Initiate repo on Github
+1 : Initiate repo on Github : https://github.com/categrame/Projet-3
 2 : Creation of the map with an excel files
 3 : Get graphic files of : wall , start, final, characters and background
 4 : 3 files required for the game : mcgyver.py (main file)
